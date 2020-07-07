@@ -1,0 +1,108 @@
+/*
+ * ADAR1000_DFS.h
+ *
+ *  Created on: Sep 11, 2019
+ *      Author: thuannc
+ */
+
+#ifndef ADAR1000_DFS_H_
+#define ADAR1000_DFS_H_
+
+/* Registers */
+#define ADAR_INTERFACE_CONFIG_A		0x000
+#define ADAR_INTERFACE_CONFIG_B		0X001
+#define ADAR_DEV_CONFIG				0x002
+#define ADAR_CHIP_TYPE				0x003
+#define ADAR_PRODUCT_ID_H			0x004
+#define ADAR_PRODUCT_ID_L			0x005
+#define ADAR_SCRATCH_PAD			0x00A
+#define ADAR_SPI_REV				0x00B
+#define ADAR_VENDOR_ID_H			0x00C
+#define ADAR_VENDOR_ID_L			0x00D
+#define	ADAR_TRANSFER_REG			0x00F
+
+#define	ADAR_CH1_RX_GAIN			0x010
+#define	ADAR_CH2_RX_GAIN			0x011
+#define	ADAR_CH3_RX_GAIN			0x012
+#define	ADAR_CH4_RX_GAIN			0x013
+
+#define	ADAR_CH1_RX_PHASE_I			0x014
+#define	ADAR_CH1_RX_PHASE_Q			0x015
+#define	ADAR_CH2_RX_PHASE_I			0x016
+#define	ADAR_CH2_RX_PHASE_Q			0x017
+#define	ADAR_CH3_RX_PHASE_I			0x018
+#define	ADAR_CH3_RX_PHASE_Q			0x019
+#define	ADAR_CH4_RX_PHASE_I			0x01A
+#define	ADAR_CH4_RX_PHASE_Q			0x01B
+
+#define ADAR_CH1_TX_GAIN			0x01C
+#define ADAR_CH2_TX_GAIN			0x01D
+#define ADAR_CH3_TX_GAIN			0x01E
+#define ADAR_CH4_TX_GAIN			0x01F
+
+#define ADAR_CH1_TX_PHASE_I			0x020
+#define ADAR_CH1_TX_PHASE_Q			0x021
+#define ADAR_CH2_TX_PHASE_I			0x022
+#define ADAR_CH2_TX_PHASE_Q			0x023
+#define ADAR_CH3_TX_PHASE_I			0x024
+#define ADAR_CH3_TX_PHASE_Q			0x025
+#define ADAR_CH4_TX_PHASE_I			0x026
+#define ADAR_CH4_TX_PHASE_Q			0x027
+
+#define ADAR_LD_WRK_REGS			0x028
+
+#define	ADAR_CH1_PA_BIAS_ON			0x029
+#define	ADAR_CH2_PA_BIAS_ON			0x02A
+#define	ADAR_CH3_PA_BIAS_ON			0x02B
+#define	ADAR_CH4_PA_BIAS_ON			0x02C
+
+#define ADAR_LNA_BIAS_ON			0x02D
+#define	ADAR_RX_ENABLES				0x02E
+#define	ADAR_TX_ENABLES				0x02F
+#define	ADAR_MISC_ENABLES			0x030
+#define	ADAR_SW_CTRL				0x031
+#define	ADAR_ADC_CTRL				0x032
+#define	ADAR_ADC_OUTPUT				0x033
+
+#define	ADAR_BIAS_CURRENT_RX_LNA	0x034
+#define	ADAR_BIAS_CURRENT_RX		0x035
+#define	ADAR_BIAS_CURRENT_TX		0x036
+#define	ADAR_BIAS_CURRENT_TX_DRV	0x037
+
+#define ADAR_MEM_CTRL				0x038
+
+#define ADAR_RX_CHX_MEM				0x039
+#define ADAR_RX_CH1_MEM				0x03D
+#define ADAR_RX_CH2_MEM				0x03E
+#define ADAR_RX_CH3_MEM				0x03F
+#define	ADAR_RX_CH4_MEM				0x040
+
+#define ADAR_TX_CHX_MEM				0x03A
+#define ADAR_TX_CH1_MEM				0x041
+#define ADAR_TX_CH2_MEM				0x042
+#define ADAR_TX_CH3_MEM				0x043
+#define	ADAR_TX_CH4_MEM				0x044
+
+#define	ADAR_REV_ID					0x045
+
+#define	ADAR_CH1_PA_BIAS_OFF		0x046
+#define	ADAR_CH2_PA_BIAS_OFF		0x047
+#define	ADAR_CH3_PA_BIAS_OFF		0x048
+#define	ADAR_CH4_PA_BIAS_OFF		0x049
+
+#define	ADAR_LNA_BIAS_OFF			0x04A
+#define	ADAR_TX_TO_RX_DELAY_CTRL	0x04B
+#define	ADAR_RX_TO_TX_DELAY_CTRL	0x04C
+
+#define	ADAR_TX_BEAM_STEP_START		0x04D
+#define	ADAR_TX_BEAM_STEP_STOP		0x04E
+#define	ADAR_RX_BEAM_STEP_START		0x04F
+#define	ADAR_RX_BEAM_STEP_STOP		0x050
+
+#define ADAR_RX_BIAS_RAM_CTL		0x051
+#define	ADAR_TX_BIAS_RAM_CTL		0x052
+
+#define	ADAR_LDO_TRIM_CTL_0			0x400
+#define	ADAR_LDO_TROL_CTL_1			0x401
+
+#endif /* ADAR1000_DFS_H_ */
